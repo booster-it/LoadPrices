@@ -24,7 +24,7 @@ def configure_logger():
     log_level = config.get("log", "level", fallback="INFO")
     log_path = config.get("log", "path", fallback="")
     # log_format = config.get("log", "format", fallback="{time} {level} {message}")
-    log_rotation = config.get("log", "rotation", fallback="10 MB")
+    log_rotation = config.get("log", "rotation", fallback="1 MB")
     log_retention = config.get("log", "retention", fallback="7 days")
     log_compression = config.get("log", "compression", fallback="zip")
 
