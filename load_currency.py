@@ -73,7 +73,7 @@ class CurrencyLoader:
             logger.info('Загрузка в базу данных: конец')
 
 if __name__ == "__main__":
-    # configure_logger()
+    configure_logger()
     loader = CurrencyLoader()
     loader.load_currency()
     logger.info("Загрузка завершена")

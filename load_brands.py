@@ -55,7 +55,7 @@ class BrandLoader:
     @timing_decorator
     def load_makes(self, data, table, batchsize=500):
         logger.info('Начало загрузки данных в базу SQL')
-        cursor = self.sql.cnxn.cursor()      # создаем курсор
+        cursor = self.sql.cnxn.cursor()  # создаем курсор
         cursor.fast_executemany = True   # активируем быстрое выполнение
 
         # Создаем таблицу для временных данных       
